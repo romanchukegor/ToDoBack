@@ -13,7 +13,7 @@ const {
 router.get('/tasks', getAllTasks);
 router.post('/tasks', createNewTask);
 router.patch('/tasks/:_id/text', changeTaskInfo);
-router.patch('/tasks/:_id/isCheck', changeCheckBoxTask);
+router.patch('/tasks/:_id/is-check', changeCheckBoxTask);
 router.delete('/tasks/:_id', deleteTask);
 router.delete('/tasks', deleteAllTasks);
 

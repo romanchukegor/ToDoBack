@@ -1,13 +1,13 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
-const {Schema} = mongoose;
+const { Schema } = mongoose;
 
-const taskScheme = new Schema ({
+const taskScheme = new Schema({
   text: String,
   isCheck: {
     type: Boolean,
-    default: false
-  }
-})
+    default: false,
+  },
+});
 
-module.exports = Task = mongoose.model('Tasks', taskScheme)
+module.exports = Task = mongoose.model("Tasks", taskScheme);

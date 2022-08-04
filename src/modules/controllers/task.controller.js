@@ -52,7 +52,7 @@ const deleteTask = async (req, res, next) => {
     }
 
     const deleteTask = await Task.deleteOne({ _id });
-    res.status(200).send("task was deleted");
+    res.status(200).send(deleteTask);
   } catch (error) {
     res.status(400).send("Failed delete task");
   }
@@ -87,7 +87,7 @@ const changeCheckBoxTask = async (req, res, next) => {
       { new: true }
     );
     res.status(200).send(task);
-  } catch (err) {
+  } catch (error) {
     res.status(400).send("Failed to change a task");
   }
 };
