@@ -1,5 +1,6 @@
 const Task = require("../../db/models/tasks/index");
 
+
 const getAllTasks = async (req, res, next) => {
   try {
     const allTasks = await Task.find();
